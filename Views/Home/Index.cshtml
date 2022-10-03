@@ -1,9 +1,52 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+    List<string[]> pizza = new()
+{
+        new[]  { "Margherita", "La classica ", "foto", "4,00" },
+        new[]  { "Diavola", "il Sud", "foto", "5,00" },
+        new[]  { "Boscaiola", "il Nord ", "foto", "6,00" },
+        new[]  { "La casa", "Pizza della casa", "foto", "8,00" },
+    };
+
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria Statica</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    
+    <div style="display:flex;">
+        <main style="margin:auto";>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Descrizione</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (string[] e in pizza)
+                        {
+                            <tr >
+                                <td style="padding:8px;">@e[0]</td>
+                                <td style="padding:8px;">@e[1]</td>
+                                <td style="padding:8px;">@e[2]</td>
+                                <td style="padding:8px;">@e[3]</td>
+                            </tr>
+                        }
+                </tbody>
+            </table>
+        </main>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
+</html>
