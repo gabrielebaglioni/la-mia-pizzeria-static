@@ -2,10 +2,10 @@
         Layout = null;
         List<string[]> pizza = new()
         {
-            new[]  { "Margherita", "La classica ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.giallozafferano.it%2Fimages%2F175-17528%2FPizza-Margherita_650x433_wm.jpg&imgrefurl=https%3A%2F%2Fricette.giallozafferano.it%2FPizza-Margherita.html&tbnid=LmzZVur1RjNa_M&vet=12ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg..i&docid=II0CCNnCfNeGkM&w=650&h=433&q=margherita%20pizza&ved=2ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg", "4,00" },
-            new[]  { "Diavola", "il Sud", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.giallozafferano.it%2Fimages%2F175-17528%2FPizza-Margherita_650x433_wm.jpg&imgrefurl=https%3A%2F%2Fricette.giallozafferano.it%2FPizza-Margherita.html&tbnid=LmzZVur1RjNa_M&vet=12ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg..i&docid=II0CCNnCfNeGkM&w=650&h=433&q=margherita%20pizza&ved=2ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg", "5,00" },
-            new[]  { "Boscaiola", "il Nord ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.giallozafferano.it%2Fimages%2F175-17528%2FPizza-Margherita_650x433_wm.jpg&imgrefurl=https%3A%2F%2Fricette.giallozafferano.it%2FPizza-Margherita.html&tbnid=LmzZVur1RjNa_M&vet=12ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg..i&docid=II0CCNnCfNeGkM&w=650&h=433&q=margherita%20pizza&ved=2ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg", "6,00" },
-            new[]  { "La casa", "Pizza della casa", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.giallozafferano.it%2Fimages%2F175-17528%2FPizza-Margherita_650x433_wm.jpg&imgrefurl=https%3A%2F%2Fricette.giallozafferano.it%2FPizza-Margherita.html&tbnid=LmzZVur1RjNa_M&vet=12ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg..i&docid=II0CCNnCfNeGkM&w=650&h=433&q=margherita%20pizza&ved=2ahUKEwjr96LTlMT6AhVS66QKHQSMCLAQMygJegUIARCZAg", "8,50" },
+            new[]  { "Margherita", "La classica ", "https://www.melarossa.it/wp-content/uploads/2021/02/ricetta-pizza-margherita.jpg?x58780", "4,00" },
+            new[]  { "Diavola", "il Sud", "https://www.melarossa.it/wp-content/uploads/2021/02/ricetta-pizza-margherita.jpg?x58780", "5,00" },
+            new[]  { "Boscaiola", "il Nord ", "https://www.melarossa.it/wp-content/uploads/2021/02/ricetta-pizza-margherita.jpg?x58780", "6,00" },
+            new[]  { "La casa", "Pizza della casa", "https://www.melarossa.it/wp-content/uploads/2021/02/ricetta-pizza-margherita.jpg?x58780", "8,50" },
         };
 
     }
@@ -37,7 +37,7 @@
                                 <tr >
                                     <td>@e[0]</td>
                                     <td>@e[1]</td>
-                                    <td><img src=@e[2]/></td>
+                                    <td><img style="width:30px" src=@e[2]></td>
                                     <td>@e[3] €</td>
                                 </tr>
                             }

@@ -1,0 +1,68 @@
+﻿@{
+    
+
+    string name = "Gabriele";
+    string surname = "Baglioni";
+
+
+}
+@{
+    int somma(int n)
+    {
+        return (n * (n + 1)) / 2;
+    }
+}
+@{
+    string frase = "nel mezzo del cammin di nostra vita";
+    int count = 0;
+    foreach (char i in frase)
+    {
+        if (i == 'a') count++;
+    }
+}
+@{
+    int[] arr = new int[20];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] = new Random().Next(1, 90);
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria Statica</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <h2>@name + @surname</h2>
+    ----------------------------
+    <h2>somma da uno a  venti: @somma(20)</h2>
+    -------------------------------------------
+    <h2>la lettera "A" è presente: @count volte</h2>
+    --------------------------------------------------
+    <ul>
+        @foreach (int e in arr)
+        {
+            @if (e > 20 && e < 70)
+            {
+                <li>@e</li>
+            }
+        }
+    </ul>
+    --------------------------------------------------------
+    <h2>@DateTime.Now</h2>
+    ------------------------
+    <h2>@DateTime.Now.AddDays(-7)</h2>
+    ------------------------------------
+    <h2> @DateTime.Now.ToString("dddd")</h2>
+    ------------------------------------------
+    <h2> @DateTime.Now.AddYears(1).ToString("dddd")</h2>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

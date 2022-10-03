@@ -7,4 +7,10 @@
     <RootNamespace>la_mia_pizzeria_static</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Exercise\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Exercise\" />
+  </ItemGroup>
 </Project>
