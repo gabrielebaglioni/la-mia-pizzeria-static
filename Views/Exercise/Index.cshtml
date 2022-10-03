@@ -38,22 +38,32 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <h2>@name + @surname</h2>
+    <h2>@name  @surname</h2>
     ----------------------------
+
+
     <h2>somma da uno a  venti: @somma(20)</h2>
     -------------------------------------------
+
+
+
     <h2>la lettera "A" è presente: @count volte</h2>
     --------------------------------------------------
+
+
     <ul>
         @foreach (int e in arr)
         {
-            @if (e > 20 && e < 70)
+            @if (e >= 20 && e <= 70)
             {
                 <li>@e</li>
             }
         }
     </ul>
     --------------------------------------------------------
+
+
+
     <h2>@DateTime.Now</h2>
     ------------------------
     <h2>@DateTime.Now.AddDays(-7)</h2>
